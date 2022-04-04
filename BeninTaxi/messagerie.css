@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Spartan' , sans-serif;
+}
+h1{
+	font-size: 25px;
+	/* line-height: 64px; */
+	color: #222;
+}
+h2{
+	font-size: 46px;
+	line-height: 54px;
+	color: #222;
+}
+h4{
+	font-size: 20px;
+	color: #222;
+}
+h6{
+	font-size: 700;
+	color: #222;
+}
+p{
+	font-size: 16px;
+	color: #465b52;
+	margin: 15px 0 20px 0;
+}
+.section-p1{
+	padding: 40px 80px;
+}
+.section-m1{
+	margin: 40px 0;
+}
+body {
+	width: 100%;
+}
+.logo:hover{
+	color:yellow;
+	font-size:60px;
+	cursor:pointer;
+	transition: 0.9s ease;
+}
+#header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	/* background: black; */
+	background: #E3E6F3;
+	box-shadow: 0 5px 15 px rgba(0,0,0,0.06);
+	z-index: 999;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+.submenu{
+	display:none;
+	justify-content:center;
+	list-style:none;
+	
+}
+.submenu li a:hover{
+	display:flex;
+	position:relative;
+	flex-direction:column;	
+	
+}
+#navbar li:hover > .submenu{
+ display:inherit;
+} 
+
+#navbar{
+	display: flex;
+	align-items:center;
+	justify-content:center;	
+}
+#navbar li{
+	list-style:none;
+	padding:0 20px;
+	position:relative;
+}
+#navbar li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	/* color: #1a1a1a; */
+	color: orange;
+	transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+	color:#088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+	content:"";
+	width:30%;
+	height:2px;
+	background:#088178;
+	position:absolute;
+	bottom:-4px;
+	left:20px;
+}
+.historique{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	padding:30px 20px 20px 30px;
+	text-align:center;
+	align-items:center;
+}
+.hh{
+	width:1300px;
+	background-color:#cd853f;
+	display:flex;
+	justify-content:space-between;
+}
+.hh h4{
+	padding:10px 5px;
+	width:100%;
+	border-left:3px solid whitesmoke;
+}
+.hset div{
+	background-color:#778899;
+	display:flex;
+	justify-content:space-between;
+	padding:0px 0px 0px 0px;
+	width:1300px;
+}
+.pageset{
+	display:flex;
+	justify-content:space-between;
+	padding:20px;
+}
+.pageset .at{
+	background-color:#000080;
+	color:white;
+}
+.pageset a{
+	width:100%;
+	text-decoration:none;
+	padding:10px 15px;
+	background-color:white;
+	border:2px solid #00ced1;
+	border-radius:5px;
+}
+.pageset a:hover{
+	background-color:#dcdcdc;
+}
+.hset h4{
+	width:100%;
+	padding:10px;
+	border-top:4px solid #ffa07a;
+}
+.icon i img{
+	width:2%;
+	border-radius:5px;	
+}
+footer{
+	display:flex;
+	/* flex-wrap:wrap; */
+	justify-content:space-between;
+	background-color:black;
+	color: #008000;
+}
+footer .col{
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	margin-bottom: 20px;
+}
+footer p{
+	font-size:13px;
+	margin:0 0 8px 0;
+}
+footer a {
+	font-size: 13px;
+	margin: 10px;
+	text-decoration:none;
+}
+footer .follow{
+	margin-top:20px;
+}
+footer .follow i{
+	color:#465b52;
+	padding-right:4px;
+	cursor:pointer;
+}
+footer .copyright{
+	width:100%;
+	text-align:center;
+	margin-top:30px;
+}
